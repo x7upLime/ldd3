@@ -165,7 +165,12 @@ static int scull_seq_show(struct seq_file *s, void *v)
 }
 	
 /*
- * Tie the sequence operators up.
+ * Implementation of the sequential file:
+ * each one of those are needed in order to implement an
+ * iterator that establish a position within the sequence,
+ * step forward, and output one item in the sequence.
+ * The end result is having the iterator act as a file.
+ * Thus.. sequential file.
  */
 static struct seq_operations scull_seq_ops = {
 	.start = scull_seq_start,
