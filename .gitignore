@@ -35,3 +35,6 @@ asynctest
 linux_source_cdt
 !.project
 !.cproject
+
+# other stuff
+TAGS
