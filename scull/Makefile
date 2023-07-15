@@ -1,6 +1,8 @@
-# Comment/uncomment the following line to disable/enable debugging
+# this is passed from the command line like this:
+# $ make DEBUG=y
 #DEBUG = y
-
+### check the value:
+$(info $$DEBUG is [${DEBUG}])
 
 # Add your debugging flag (or not) to CFLAGS
 ifeq ($(DEBUG),y)
